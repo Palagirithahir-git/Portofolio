@@ -14,7 +14,7 @@ const projects = [
 
     // 🔗 Replace with your Supabase Storage Public URL
     live: "https://tmbvojiufeknudjdbqpd.supabase.co/storage/v1/object/sign/portofolio-videos/ecomerce.mp4?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV80NDBiZjk0Mi04ZDM5LTQ1MmYtOTRjMS1mMWYwZGI2MmEwNzkiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwb3J0b2ZvbGlvLXZpZGVvcy9lY29tZXJjZS5tcDQiLCJzY29wZSI6ImRvd25sb2FkIiwiaWF0IjoxNzg1OTgyMDk0LCJleHAiOjE4MTc1MTgwOTR9.80hk_3fVuiqM-0J_UuDKDGvZaklj6NSUThd9SpfpP0Y",
-
+    autoplay: true,
     image: "/images/electromart.png",
   },
 
@@ -32,7 +32,7 @@ const projects = [
 
     // 🔗 Replace with your Supabase Storage Public URL
     live: "https://tmbvojiufeknudjdbqpd.supabase.co/storage/v1/object/sign/portofolio-videos/taskmanager.mp4?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV80NDBiZjk0Mi04ZDM5LTQ1MmYtOTRjMS1mMWYwZGI2MmEwNzkiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJwb3J0b2ZvbGlvLXZpZGVvcy90YXNrbWFuYWdlci5tcDQiLCJzY29wZSI6ImRvd25sb2FkIiwiaWF0IjoxNzg1OTgyMTQxLCJleHAiOjE4MTc1MTgxNDF9.De_nyZ17FAPxOotkX8vE2ymll7rGNWdLjuIqPBGK5yM",
-
+    autoplay: true,
     image: "/images/taskmanager.png",
   },
 ];

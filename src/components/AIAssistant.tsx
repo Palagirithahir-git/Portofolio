@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { MessageCircle, X, Send, Mic } from "lucide-react";
 import { trackEvent } from "@/lib/analytics";
+import portfolio from "@/data/portfolio";
 
 type Message = {
   role: "user" | "ai";
@@ -24,7 +25,20 @@ export default function AIAssistant() {
   const [messages, setMessages] = useState<Message[]>([
     {
       role: "ai",
-      text: "Hi 👋 I am Thahir AI Assistant. Ask me about skills, projects, or experience.",
+      text: `👋 Welcome to ThahirVerse AI!
+
+I'm your personal AI portfolio assistant.
+
+I can help you with:
+• 👨‍💻 About Me
+• 💼 Projects
+• 🛠️ Skills
+• 🎓 Education
+• 📄 Resume
+• 🚀 Career Goals
+• 📧 Contact Information
+
+Click one of the suggested questions below or ask me anything about my portfolio. I'm here to assist you!`,  
     },
   ]);
 
@@ -179,13 +193,24 @@ export default function AIAssistant() {
 
 
 
-  const suggestions=[
-
-    "Who is Thahir?",
-
-    "What skills?",
-
-    "Tell me about ElectroMart",
+  const suggestions = [
+  "👋 Tell me about yourself",
+  "💼 What projects have you built?",
+  "🛠️ What technologies do you know?",
+  "🤖 Tell me about ElectroMart",
+  "📋 Explain your Task Management System",
+  "🎓 What is your educational background?",
+  "📄 Show your resume",
+  "🏆 What are your strengths?",
+  "🚀 What are your career goals?",
+  "🧠 Why are you interested in AI?",
+  "⚛️ Tell me about your React & Next.js skills",
+  "☕ Tell me about your Java & Spring Boot skills",
+  "📊 Do you know Power BI?",
+  "🗄️ What databases have you worked with?",
+  "🌐 Show your GitHub",
+  "📧 How can I contact you?",
+  "🎯 Why should we hire you?",
 
   ];
 

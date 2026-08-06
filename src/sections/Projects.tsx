@@ -13,8 +13,6 @@ export default function Projects() {
       >
         <div className="mx-auto max-w-7xl">
 
-          {/* Heading */}
-
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -34,8 +32,6 @@ export default function Projects() {
               Some of my recent projects built using modern technologies.
             </p>
           </motion.div>
-
-          {/* Project Cards */}
 
           <div className="mt-16 grid gap-8 md:grid-cols-2">
 
@@ -57,15 +53,15 @@ export default function Projects() {
                 className="overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-xl dark:border-zinc-700 dark:bg-zinc-900"
               >
 
-                {/* Image */}
-
-                <img
-                  src={project.image}
-                  alt={project.title}
+                {/* Project Demo Video */}
+                <video
+                  src={project.live}
+                  poster={project.image}
+                  controls
+                  playsInline
+                  preload="metadata"
                   className="h-56 w-full object-cover"
                 />
-
-                {/* Content */}
 
                 <div className="p-6">
 
@@ -77,24 +73,16 @@ export default function Projects() {
                     {project.description}
                   </p>
 
-                  {/* Tech Stack */}
-
                   <div className="mt-6 flex flex-wrap gap-2">
-
                     {project.technologies.map((tech) => (
-
                       <span
                         key={tech}
                         className="rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-700 dark:bg-blue-900 dark:text-blue-300"
                       >
                         {tech}
                       </span>
-
                     ))}
-
                   </div>
-
-                  {/* Buttons */}
 
                   <div className="mt-8 flex gap-4">
 
@@ -113,7 +101,7 @@ export default function Projects() {
                       rel="noopener noreferrer"
                       className="rounded-full border border-gray-300 px-5 py-3 transition hover:bg-gray-100 dark:hover:bg-zinc-800"
                     >
-                      Live Demo
+                      Open Video
                     </a>
 
                   </div>
